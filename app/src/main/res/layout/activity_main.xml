@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- 🔥 HEADER (fixed at top) -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lost &amp; Found App"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- 🔥 CENTER CONTENT AREA -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- CREATE -->
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create New Advert"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- VIEW -->
+        <Button
+            android:id="@+id/btnViewItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show All Lost &amp; Found Items"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- COUNTS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="6dp">
+
+            <TextView
+                android:id="@+id/txtStatsLost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0 Lost items"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#222222"/>
+
+            <TextView
+                android:id="@+id/txtStatsFound"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0 Found items"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#222222"/>
+        </LinearLayout>
+
+        <!-- LATEST -->
+        <TextView
+            android:id="@+id/txtLastEntry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latest • -"
+            android:textSize="13sp"
+            android:textColor="#333333"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>
